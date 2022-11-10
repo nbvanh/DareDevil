@@ -1,0 +1,135 @@
+@-webkit-keyframes headDip {
+  40% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  60%, 100% {
+    transform: rotate(-10deg) translate(-2px, 3px);
+  }
+}
+@keyframes headDip {
+  40% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  60%, 100% {
+    transform: rotate(-10deg) translate(-2px, 3px);
+  }
+}
+@-webkit-keyframes drip {
+  0%, 15% {
+    transform: translateY(0px);
+  }
+  40%, 100% {
+    transform: translateY(325px);
+  }
+}
+@keyframes drip {
+  0%, 15% {
+    transform: translateY(0px);
+  }
+  40%, 100% {
+    transform: translateY(325px);
+  }
+}
+@-webkit-keyframes drip2 {
+  0%, 25% {
+    transform: translateY(0px);
+  }
+  45%, 100% {
+    transform: translateY(325px);
+  }
+}
+@keyframes drip2 {
+  0%, 25% {
+    transform: translateY(0px);
+  }
+  45%, 100% {
+    transform: translateY(325px);
+  }
+}
+@-webkit-keyframes fadeOut {
+  10%, 70% {
+    opacity: 1;
+  }
+  0%, 80%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  10%, 70% {
+    opacity: 1;
+  }
+  0%, 80%, 100% {
+    opacity: 0;
+  }
+}
+body {
+  background: #1d0f11;
+}
+
+.aniWrap {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  max-width: 555px;
+  width: 100%;
+}
+
+svg {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #Head_3_ {
+    transform-origin: 50% 50%;
+    -webkit-animation-name: headDip;
+            animation-name: headDip;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+}
+#daredevilMask {
+  -webkit-animation-name: drip;
+          animation-name: drip;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+#titleMask {
+  -webkit-animation-name: drip2;
+          animation-name: drip2;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+}
